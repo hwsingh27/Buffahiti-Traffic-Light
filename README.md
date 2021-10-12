@@ -29,3 +29,18 @@ Hence, it was made common so that it could be implemented anywhere.<br/>
 GPIO Pin-7 of Port-D interrupt is used to check if there comes any interrupt. After the interrupt, the state changes from the current state to the CROSSWALK_TRANSITION
 state, works same as Capacitive Slider. But, while transitioning to CROSSWALK state and in the CROSSWALK state, the capacitive slider and button pressed is not detected
 as per the requirements. As soon as the CROSSWALK state is done, the CROSSWALK_STOP_TRANSITION begins and goes to the STOP state.
+
+## Peer Review
+ @Date - 12th October 2021 <br/>
+ @Time -  7:00 am<br/>
+ @Partner - Varun Mehta <br/>
+ 
+ Suggestions - <br/>
+ Adding function descriptions to explain the function does. <br/>
+ Add comments after each statement in the Init() functions to explain the configuration. <br/>
+ Make variables such as counter, timer and reset static volatile. <br/><br/>
+ 
+ Changes -
+ Added the comments in pwm.c and switch.c files <br/>
+ Explained the function is more descriptive manner. <br/>
+ Made the counter, timer and reset variables as static volatile in systick.c file. <br/>
