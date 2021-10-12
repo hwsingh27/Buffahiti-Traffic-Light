@@ -15,6 +15,10 @@
 #include "common.h"
 #include "core_cm0plus.h"
 
+/*
+ * Made the variables counter, reset and timer as static volatile
+ * as suggested by Varun Mehta.
+ */
 static volatile ticktime_t counter=0;
 static volatile ticktime_t reset=0;
 static volatile ticktime_t timer=0;

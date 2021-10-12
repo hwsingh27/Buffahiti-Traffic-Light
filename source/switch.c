@@ -21,6 +21,10 @@ extern volatile state_e state;
 
 void Init_Interrupt(void)
 {
+	/*
+	 * Comments are added as suggested by peer Varun Mehta.
+	 * Comments have been put in every configuration statements.
+	 */
 	SIM->SCGC5 |= SIM_SCGC5_PORTD_MASK;		//setting the clock for PORTD
 	PORTD->PCR[SWITCH_POS] = PORT_PCR_MUX(1) | PORT_PCR_PS_MASK
 			| PORT_PCR_PE_MASK | PORT_PCR_IRQC(10);
