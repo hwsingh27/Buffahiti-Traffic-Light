@@ -35,12 +35,12 @@ as per the requirements. As soon as the CROSSWALK state is done, the CROSSWALK_S
  @Time -  7:00 am<br/>
  @Partner - Varun Mehta <br/>
  
- Suggestions - <br/>
+ Suggestions made by Varun- <br/>
  Adding function descriptions to explain the function does. <br/>
  Add comments after each statement in the Init() functions to explain the configuration. <br/>
  Make variables such as counter, timer and reset static volatile. <br/><br/>
  
- Changes -
+ Changes made by me (Harshwardhan) -
  Added the comments in pwm.c and switch.c files <br/>
  Explained the function is more descriptive manner. <br/>
  Made the counter, timer and reset variables as static volatile in systick.c file. <br/>
