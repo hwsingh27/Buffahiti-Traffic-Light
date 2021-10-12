@@ -1,0 +1,2 @@
+statemachine.c:28:7:State_To_String	24	static
+statemachine.c:65:6:Statemachine	24	static
