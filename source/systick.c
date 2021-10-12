@@ -25,9 +25,9 @@ static volatile ticktime_t timer=0;
 
 void Init_Systick()
 {
-	SysTick->LOAD = (48000000/16)/100; 									//10msecx48Mhz/16
-	NVIC_SetPriority(SysTick_IRQn,1);  									//interrupt priority is set to 1
-	SysTick->VAL=0;					   									//force load of reload value
+	SysTick->LOAD = (48000000/16)/100; 	//10msecx48Mhz/16
+	NVIC_SetPriority(SysTick_IRQn,1);  	//interrupt priority is set to 1
+	SysTick->VAL=0;					   	//force load of reload value
 	SysTick->CTRL=SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;	//enable interrupt and systick timer with alternative clock source
 }
 
